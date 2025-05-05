@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Freelance Data Visualization and Dashboard Creation">
+
+    <link rel="shortcut icon" href="static/android-chrome-512x512.png">
+
+    
+    <title>Jordan Turner's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- AOS Library for Scroll Animations -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<link href="./css/style.css" rel="stylesheet">
+   <!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top shadow-sm" id="mainNav" data-aos="fade-down">
+        <div class="container">
+            <!-- Logo Image -->
+            <a class="navbar-brand d-flex align-items-center" href="#home">
+                <img src="images/logo1.png" alt="Logo" style="height: 65px;">
+            </a>
+    
+            <!-- Toggle Button -->
+            <button class="navbar-toggler text-uppercase font-weight-bold text-white " type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                Menu <i class="fas fa-bars ms-2"></i>
+            </button>
+    
+            <!-- Nav Items -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
+                <ul class="navbar-nav ">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link py-3 px-3 rounded active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link py-3 px-3 rounded" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link py-3 px-3 rounded" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link py-3 px-3 rounded" href="#about">About</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link py-3 px-3 rounded" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+
+    <!-- Masthead -->
+    <header class="masthead text-center" data-aos="fade-down">
+    <div class="container d-flex align-items-center flex-column masthead-content">
+        <img class="masthead-avatar mb-5 rounded-circle" src="./images/profile.png" alt="..." data-aos="zoom-in">
+        <h1 class="masthead-heading text-uppercase mb-3" data-aos="fade-up">Transforming Data into Insights</h1>
+        <p class="masthead-subheading" data-aos="fade-up" data-aos-delay="200">Freelance Data Visualization & Dashboard/Report Creation</p>
+    </div>
+</header>
+
+
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-5" data-aos="fade-up">
+    <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-4" data-aos="fade-right">Portfolio</h2>
+        <div class="divider-custom"></div>
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card shadow-sm" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="./images/dashboard1.png" class="card-img-top" alt="Unattached Athletics">
+                    <div class="card-body text-center">
+                        <h5 class="card-title" data-aos="fade-left">Unattached Athletics</h5>
+                        <p class="card-text" data-aos="fade-left" data-aos-delay="200">
+                            A dashboard of historic track and field performances.
+                        </p>
+                        <a href="index3.html" class="btn btn-primary" target="_blank">View Dashboard</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card shadow-sm" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="./images/dashboard4.png" class="card-img-top" alt="Retail and Warehouse Sales Data">
+                    <div class="card-body text-center">
+                        <h5 class="card-title" data-aos="fade-left">Retail and Warehouse Sales Data Dashboard with Ml integrations</h5>
+                        <p class="card-text" data-aos="fade-left" data-aos-delay="200">
+                            Before: Raw sales numbers → After: Dashboard with trends.
+                        </p>
+                        <a href="index4.html" class="btn btn-primary" target="_blank">View Dashboard</a>
+                    </div>
+                </div>
+            </div>
+           <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card shadow-sm" data-aos="zoom-in" data-aos-delay="300">
+                <img src="./images/dashboard_2.png" class="card-img-top" alt="Real Estate Sales Analysis">
+                <div class="card-body text-center">
+                    <h5 class="card-title" data-aos="fade-left">Real Estate Sales Analysis Dashboard</h5>
+                    
+                    <!-- Truncated Text -->
+                    <p class="card-text" id="card-text-short">
+                        Uncover 20+ years of real estate trends 📈
+                    </p>
+                    
+                    <!-- Full Text (Initially Hidden) -->
+                    <p class="card-text d-none" id="card-text-full">
+                        Uncover 20+ years of real estate trends 📈 <br>
+                        - How have home prices changed over time? <br>
+                        - What towns see the most sales? <br>
+                        - Which property types dominate the market? <br>
+                        <strong>Before:</strong> Raw sales data 📊 → <strong>After:</strong> Actionable investment insights 💡.
+                    </p>
+                    
+                    <!-- Toggle Button -->
+                    <button class="btn btn-link p-0 mt-2" onclick="toggleText(this)">View More</button>
+                    
+                    <a href="index2.html" class="btn btn-primary d-block mt-3" target="_blank">View Dashboard</a>
+                </div>
+            </div>
+            
+</div>
+<div class="col-12 col-sm-6 col-lg-12">
+          <div class="card shadow-sm" data-aos="zoom-in" data-aos-delay="300">
+    <img src="./images/dashboard_1.png" class="card-img-top" alt="Ecommerce Sales Insights">
+    <div class="card-body text-center">
+        <h5 class="card-title" data-aos="fade-left">Ecommerce Sales Insights Dashboard</h5>
+        <p class="card-text" data-aos="fade-left" data-aos-delay="200">
+            Unlock actionable insights into your eCommerce sales 📊 <br>
+            - How do sales trends evolve over time? 📅 <br>
+            - Which purchase methods drive the most revenue? 💳 <br>
+            - What locations are performing best for sales? 🌍 <br>
+            **Before:** Raw sales data 📉 → **After:** Actionable marketing & growth strategies 🚀.
+        </p>
+        <a href="index5.html" class="btn btn-primary" target="_blank">View Dashboard</a>
+    </div>
+</div>
+
+</div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center text-uppercase text-secondary mb-4">Services</h2>
+            <div class="divider-custom"></div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="mb-4">
+                        <i class="fas fa-chart-bar fa-3x text-primary mb-3"></i>
+                        <h4 class="text-uppercase">Data Visualization</h4>
+                        <p>Transforming raw data into insightful visualizations for better decision-making.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mb-4">
+                        <i class="fas fa-desktop fa-3x text-primary mb-3"></i>
+                        <h4 class="text-uppercase">Custom Dashboards</h4>
+                        <p>Creating interactive and user-friendly dashboards tailored to your needs.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mb-4">
+                        <i class="fas fa-code fa-3x text-primary mb-3"></i>
+                        <h4 class="text-uppercase">Development</h4>
+                        <p>Providing end-to-end development for your data projects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center text-uppercase text-secondary mb-4">About</h2>
+            <div class="divider-custom"></div>
+            <div class="row">
+                <div class="col-lg-4 ms-auto">
+                    <p>I am a data enthusiast with a passion for turning numbers into stories. With years of experience in data visualization, dashboard design, and development, I help businesses and individuals make sense of their data.</p>
+                </div>
+                <div class="col-lg-4 me-auto">
+                    <p>My mission is to empower decision-makers by providing them with tools and insights that are both functional and visually appealing. Let me help you unlock the potential of your data.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Pricing Section -->
+<section id="pricing" class="text-center">
+    <div class="container">
+        <h2 class="text-uppercase">Pricing & Packages</h2>
+        <p>💰 <strong>Hourly Rate:</strong> $37.00/hr</p>
+        <p>🔄 <strong>Ongoing Support:</strong> Retainer options available</p>
+
+        <div class="row justify-content-center mt-4">
+            <!-- Power BI Dashboards -->
+            <div class="col-md-5">
+                <div class="card border-primary">
+                    <div class="card-body">
+                        <h4 class="card-title">📊 Power BI Dashboards</h4>
+                        <ul class="list-unstyled">
+                            <li>✅ Custom Interactive Dashboards</li>
+                            <li>✅ Advanced Filters & Tooltips</li>
+                            <li>✅ Multi-Source Data Integration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Analysis & Reports -->
+            <div class="col-md-5">
+                <div class="card border-success">
+                    <div class="card-body">
+                        <h4 class="card-title">📑 Data Analysis & Reporting</h4>
+                        <ul class="list-unstyled">
+                            <li>✅ Data Cleaning & Visualization</li>
+                            <li>✅ Custom Data Reports</li>
+                            <li>✅ Automated Excel/CSV Reports</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Custom Solutions & Retainer -->
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-6">
+                <div class="card border-dark">
+                    <div class="card-body">
+                        <h4 class="card-title">🛠️ Custom Solutions & Retainers</h4>
+                        <p>Need ongoing data support? I offer retainer-based consulting.</p>
+                        <p>💼 <strong>Retainer Packages:</strong> Starting at <strong>$1,000/month</strong></p>
+                        <p>📩 Contact me for a custom quote!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scope Control & Pricing Transparency -->
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-8">
+                <div class="card border-info">
+                    <div class="card-body">
+                        <h4 class="card-title">📏 Scope Control & Pricing Transparency</h4>
+                        <p>✔️ <strong>No Hidden Fees, No Scope Creep</strong></p>
+                        <p>✔️ Clear pricing prevents unexpected changes or added costs</p>
+                        <p>✔️ Defined project timelines ensure quality & efficiency</p>
+                        <p><strong>Flat Rate Tiers:</strong></p>
+                        <ul class="list-unstyled">
+                            <li>📊 <strong>Basic Package – $800 to $1,000</strong> (Data Cleaning, Basic Dashboards, Reports) – ~1 Week</li>
+                            <li>📈 <strong>Advanced Package – $2,000</strong> (Forecasting, Clustering, ML Insights, Full Dashboard) – ~2 Weeks</li>
+                        </ul>
+                        <p>💡 Need something custom? Let's discuss a tailored solution!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <a href="#contact" class="btn btn-primary btn-lg">📩 Get a Free Quote</a>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-secondary text-white">
+        <div class="container">
+            <h2 class="text-center text-uppercase mb-4">Contact Me</h2>
+            <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group mb-3">
+                    <textarea class="form-control" id="message" rows="5" placeholder="Your Message *" required="required"></textarea>
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+   
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container text-center">
+            <a href="mailto:jordan@jordanturnerdata.com">
+            <p>Email: <strong>jordan@jordanturnerdata.com</strong></p>
+        </a>
+        </div>
+    </section>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <p class="text-muted">&copy; 2025 Jordan Turner. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+    AOS.init({
+        duration: 1200,  // Animation duration (ms)
+        once: true,      // Animate only once
+    });
+</script>
+<script>
+    function toggleText(button) {
+        const shortText = document.getElementById('card-text-short');
+        const fullText = document.getElementById('card-text-full');
+
+        if (fullText.classList.contains('d-none')) {
+            shortText.classList.add('d-none');
+            fullText.classList.remove('d-none');
+            button.textContent = 'View Less';
+        } else {
+            shortText.classList.remove('d-none');
+            fullText.classList.add('d-none');
+            button.textContent = 'View More';
+        }
+    }
+</script>
+
+</body>
+</html>

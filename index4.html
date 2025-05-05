@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jordan Turner's Portfolio</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lato:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+ <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+   <!-- Navigation -->
+   <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top shadow-sm" id="mainNav" data-aos="fade-down">
+    <div class="container">
+        <!-- Logo Image -->
+        <a class="navbar-brand d-flex align-items-center" href="#home">
+            <img src="images/logo1.png" alt="Logo" style="height: 65px;">
+        </a>
+
+        <!-- Toggle Button -->
+        <button class="navbar-toggler text-uppercase font-weight-bold text-white " type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+            aria-expanded="false" aria-label="Toggle navigation">
+            Menu <i class="fas fa-bars ms-2"></i>
+        </button>
+
+        <!-- Nav Items -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
+            <ul class="navbar-nav ">
+                <li class="nav-item mx-2">
+                    <a class="nav-link py-3 px-3 rounded active" href="#home">Home</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link py-3 px-3 rounded" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link py-3 px-3 rounded" href="#services">Services</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link py-3 px-3 rounded" href="#about">About</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link py-3 px-3 rounded" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+  <!-- Full-Width Masthead w/ 100vh height -->
+  <header class="masthead" id="home">
+    <div class="masthead-content">
+      <h1 class="masthead-heading text-center">Retail and Warehouse Sales Data</h1>
+      <p class="masthead-subheading text-center">
+       Unlock key trends in retail sales, warehouse performance, and supplier contributions with interactive data visualizations.
+      </p>
+    </div>
+  </header>
+  <section id="portfolio" class="container-fluid pt-5 pb-5">
+    <div class="dashboard-gallery">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-6 col-sm-6 col-lg-6">
+            <img src="images/dashboard_1.png" alt="Dashboard 1" />
+            
+          </div>
+          <div class="col-12 col-sm-6 col-lg-6">
+            <img src="images/dashboard_2.png" alt="Dashboard 2" />
+          
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="col-12 col-sm-6 col-lg-6">
+            <img src="images/dashboard_3.png" alt="Dashboard 3" />
+          </div>
+
+          <!-- <div class="col-12 col-sm-6 col-lg-6">
+            <img src="images/dashboard4.png" alt="Dashboard 4" />
+
+          </div> -->
+        </div>
+        <div class="dashboard-description mt-4">
+          <h2>About This Dashboard</h2>
+          <p>
+            This Retail & Warehouse Sales Performance Dashboard provides an in-depth analysis of sales trends, supplier contributions, and predictive insights. It visualizes key metrics such as total retail sales, warehouse sales, and retail transfers over time, enabling trend identification. Supplier performance is highlighted through bar charts and a detailed sales breakdown, while clustering and ABC categorization segment sales based on value distribution. Additionally, predictive analytics compare actual and forecasted retail sales. This dashboard is designed to support data-driven decision-making, helping businesses optimize inventory, track supplier impact, and forecast sales trends effectively. Built using Power BI with advanced data visualization techniques. 
+
+
+
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+
+  </section>
+
+
+
+
+  <!-- CONTACT SECTION => same overlay look as masthead -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="text-center text-uppercase mb-4">Contact Me</h2>
+      <form id="contactForm" name="sentMessage" novalidate="novalidate">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group mb-3">
+              <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group mb-3">
+              <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+        </div>
+        <div class="form-group mb-3">
+          <textarea class="form-control" id="message" rows="5" placeholder="Your Message *" required="required"></textarea>
+          <p class="help-block text-danger"></p>
+        </div>
+        <div class="text-center">
+          <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">
+            Send Message
+          </button>
+        </div>
+      </form>
+      <!-- Contact Email Text -->
+      <div class="container text-center mt-5">
+        <a href="mailto:jordan@jordanturnerdata.com">
+        <p>Email: <strong>jordan@jordanturnerdata.com</strong></p>
+    </a>
+    </div>
+    </div>
+  </section>
+
+  <footer class="footer text-center">
+    <div class="container">
+      <p class="text-muted">&copy; 2025 Jordan Turner. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,  // Animation duration (ms)
+      once: true,      // Animate only once
+    });
+  </script>
+</body>
+</html>

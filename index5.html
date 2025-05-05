@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jordan Turner's Portfolio</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lato:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+  <!-- Full-Width Navbar -->
+  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top shadow-sm" id="mainNav"
+  data-aos="fade-down">
+  <div class="container">
+    <!-- Logo Image -->
+    <a class="navbar-brand d-flex align-items-center" href="#home">
+      <img src="images/logo1.png" alt="Logo" style="height: 65px;">
+    </a>
+
+    <!-- Toggle Button -->
+    <button class="navbar-toggler text-uppercase font-weight-bold text-white " type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+      aria-label="Toggle navigation">
+      Menu <i class="fas fa-bars ms-2"></i>
+    </button>
+
+    <!-- Nav Items -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
+      <ul class="navbar-nav ">
+        <li class="nav-item mx-2">
+          <a class="nav-link py-3 px-3 rounded active" href="#home">Home</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link py-3 px-3 rounded" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link py-3 px-3 rounded" href="#services">Services</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link py-3 px-3 rounded" href="#about">About</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link py-3 px-3 rounded" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Full-Width Masthead w/ 100vh height -->
+  <header class="masthead" id="home">
+    <div class="masthead-content">
+      <h1 class="masthead-heading text-center">Ecommerce Sales Insights</h1>
+      <p class="masthead-subheading text-center">
+       Discover powerful insights from eCommerce data with this interactive dashboard, designed to track sales trends, customer behaviors, and geographical performance, enabling data-driven decisions for growth.
+      </p>
+    </div>
+  </header>
+
+  <section id="portfolio" class="container-fluid pt-5 pb-5">
+    <div class="dashboard-gallery">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-6 col-sm-6 col-lg-6">
+            <img src="images/ecommerce1.png" alt="Dashboard 1" />
+           
+          </div>
+          <div class="col-12 col-sm-6 col-lg-6">
+            <img src="images/ecommerce2.png" alt="Dashboard 2" />
+          </div>
+        </div>
+    
+        <div class="dashboard-description mt-4">
+          <h2>About This Dashboard</h2>
+          <p>
+            This **Ecommerce Sales Insights Dashboard** provides a comprehensive view of sales performance, customer behavior, and market trends. It allows you to track total sales, segment customers by behavior using advanced clustering, and understand purchasing patterns across different **locations** and **purchase methods**. Key metrics like **net revenue**, **sales trends**, and **location-based performance** are easily visualized to guide your decision-making. The dashboard also highlights **customer segments** through clusters, offering insights into high-value customers and retention rates. Dynamic charts allow you to explore data by year, location, and cluster, with filtering options to isolate specific purchase methods and trends. Built in **Power BI** with powerful data modeling, this dashboard is designed to help businesses refine marketing strategies, optimize sales channels, and enhance overall performance, ensuring better targeting and increased revenue.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section (Full-Width) -->
+  <section id="services" class="container-fluid pt-5 pb-5">
+    <!-- Your Services content goes here if needed -->
+  </section>
+
+  <!-- AI-Driven Nonprofit Success Prediction Project -->
+  <section id="nonprofit-ai-project" class="container-fluid py-5">
+    <div class="container">
+        <h2 class="text-center text-uppercase mb-4">AI-Driven Nonprofit Success Prediction</h2>
+        <p class="text-center mb-5">
+            Using AI and machine learning to predict nonprofit financial success based on key organizational metrics.
+        </p>
+
+        <div class="row align-items-center mb-5">
+            <!-- Image Column -->
+            <div class="col-12 col-md-6 mb-4 mb-md-0">
+                <img src="images/ecommerce2.png" class="img-fluid rounded shadow-sm w-100" alt="Nonprofit Insights">
+            </div>
+
+            <!-- Text Column -->
+            <div class="col-12 col-md-6">
+                <h3>📜 Project Overview</h3>
+                <p>
+                    This project analyzes and predicts the financial success of nonprofit organizations 
+                    by examining revenue efficiency across various factors like location, nonprofit type, 
+                    and financial classification. 
+                </p>
+
+                <h3>🚀 Key Insights</h3>
+                <ul>
+                    <li><strong>ZIP Code is the strongest predictor</strong> of nonprofit revenue efficiency.</li>
+                    <li><strong>Nonprofit type (NTEE Code)</strong> and <strong>income category impact success.</strong></li>
+                    <li><strong>AI models</strong> effectively estimate financial sustainability.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mb-5">
+            <h3>📊 Machine Learning Models Used</h3>
+            <p>
+                This project used <strong>Random Forest & XGBoost</strong> to predict nonprofit revenue efficiency, 
+                analyzing financial, geographic, and categorical data.
+            </p>
+
+            <h3>🛠️ Technical Stack</h3>
+            <ul>
+                <li><strong>Python</strong> (Pandas, NumPy, Scikit-Learn, XGBoost, Matplotlib, Seaborn)</li>
+                <li><strong>Machine Learning</strong> (Random Forest, XGBoost, Feature Engineering)</li>
+                <li><strong>Data Preprocessing</strong> (Log Transformations, Categorical Encoding)</li>
+            </ul>
+
+            <h3>📌 Real-World Applications</h3>
+            <p>
+                This AI model can help <strong>nonprofit founders, consultants, and policymakers</strong> make 
+                data-driven decisions about funding allocation, success predictions, and nonprofit growth strategies.
+            </p>
+
+            <h3>🔮 Next Steps</h3>
+            <ul>
+                <li><strong>Deploy a Web Dashboard</strong> → AI-driven predictions for nonprofits.</li>
+                <li><strong>Expand to Multi-Year Forecasting</strong> → Predict revenue trends over time.</li>
+                <li><strong>Enhance with External Data</strong> → Integrate grant and funding datasets.</li>
+            </ul>
+        </div>
+
+        <div class="text-center">
+            <a href="#contact" class="btn btn-success btn-lg">📩 Contact Me</a>
+        </div>
+    </div>
+</section>
+
+
+
+  <!-- CONTACT SECTION => same overlay look as masthead -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="text-center text-uppercase mb-4">Contact Me</h2>
+      <form id="contactForm" name="sentMessage" novalidate="novalidate">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group mb-3">
+              <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group mb-3">
+              <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+        </div>
+        <div class="form-group mb-3">
+          <textarea class="form-control" id="message" rows="5" placeholder="Your Message *" required="required"></textarea>
+          <p class="help-block text-danger"></p>
+        </div>
+        <div class="text-center">
+          <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">
+            Send Message
+          </button>
+        </div>
+      </form>
+      <!-- Contact Email Text -->
+      <div class="container text-center mt-5">
+        <a href="mailto:jordan@jordanturnerdata.com">
+        <p>Email: <strong>jordan@jordanturnerdata.com</strong></p>
+    </a>
+    </div>
+    </div>
+  </section>
+
+  <footer class="footer text-center">
+    <div class="container">
+      <p class="text-muted">&copy; 2025 Jordan Turner. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,  // Animation duration (ms)
+      once: true,      // Animate only once
+    });
+  </script>
+</body>
+</html>
