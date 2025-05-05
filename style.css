@@ -1,0 +1,277 @@
+
+        /* Import Animate.css */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+body {
+    font-family: 'Montserrat', 'Lato', sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+/* Navbar animation */
+.navbar {
+    animation: fadeInDown 1.2s ease-in-out;
+}
+
+/* Navbar with white active links */
+.nav-link {
+    position: relative;
+    color: white !important;
+}.navbar-toggler {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+.nav-link::before {
+    content: none !important;
+    display: none !important;
+}.card.shadow-sm.aos-init.aos-animate {
+    padding: 20px;
+}
+
+
+
+/* Masthead with darker overlay */
+.masthead {
+    background: url('../static/bg.png') no-repeat center center / cover;
+    width: 100%;
+    padding-top: 160px;
+    padding-bottom: 120px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Stronger shadow */
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.masthead::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Increased darkness */
+    z-index: 1;
+}
+
+.masthead-content {
+    position: relative;
+    z-index: 2;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.masthead-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff !important;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8); /* Slight glow */
+    animation: fadeInDown 1.5s ease, pulse 3s infinite;
+}
+
+.masthead-subheading {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #fff !important;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    animation: fadeInUp 1.5s ease;
+}
+
+#portfolio {
+    position: relative;
+    background: url("../static/bg.png") no-repeat center center/cover;
+    animation: fadeInUp 1.8s ease-in-out;
+    z-index: 1;
+}
+
+#portfolio::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1; /* Push behind content but in front of background */
+}
+
+
+/* Portfolio Cards */
+.card {
+    border: 3px solid #da7b00; /* Adjust thickness & color */
+    border-radius: 10px; /* Optional: rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    animation: pulse 1.2s infinite;
+}
+#contact {
+    position: relative;
+    background: url("../static/bg.png") no-repeat center center/cover;
+    animation: fadeInUp 1.8s ease-in-out;
+    z-index: 1;
+    padding-bottom: 40px;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1; /* Push behind content but in front of background */
+}section#contact a {
+    color: #fff !important;
+}
+section#contact a:hover {
+    color: #3500f5 !important;
+}
+
+
+
+
+#contact .container {
+    position: relative;
+    z-index: 2;
+}
+
+#contact h2 {
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+/* Contact Form Enhancements */
+#contact input,
+#contact textarea {
+    background: rgba(255, 255, 255, 0.9); /* More opacity */
+    border: 2px solid rgba(255, 255, 255, 0.8); /* Darker border */
+    color: #000;
+    animation: fadeInUp 1.8s ease-in-out;
+}
+
+#contact input::placeholder,
+#contact textarea::placeholder {
+    color: #333;
+}
+
+/* Contact Button Animation */
+#sendMessageButton {
+    animation: pulse 2s infinite;
+}
+
+/* Portfolio Cards - Smooth Hover Effects */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    animation: pulse 1.2s infinite;
+}
+
+.nav-link:hover {
+    color: #f8f9fa !important;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card.border-primary {
+    border: 3px solid #da7b00 !important; /* Gold */
+}
+
+.card.border-success {
+    border: 3px solid #da7b00 !important; /* Green */
+}
+
+.card.border-dark {
+    border: 3px solid #da7b00 !important; /* Dark Grey */
+}
+
+#services i {
+    color: #da7b00 !important; /* Orange */
+}
+
+img.masthead-avatar.mb-5.rounded-circle.aos-init.aos-animate {
+    max-width: 100px;
+}
+  
+
+/* Index.2 page css */
+.dashboard-gallery img {
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(17 17 17);
+    background: gray;
+    margin-bottom: 20px;
+}
+      .dashboard-gallery img:hover {
+        transform: scale(1.05);
+      }
+  
+      .dashboard-description {
+        margin-top: 30px;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+  
+      /* Utility spacing (optional) */
+      .pt-5 {
+        padding-top: 3rem !important;
+      }
+      .pb-5 {
+        padding-bottom: 3rem !important;
+      }
+      section#portfolio img {
+        width: 100%;
+        padding: 20px;
+    }
+  
+
+@media (max-width: 768px) {
+.masthead {
+
+        padding-left: 20px;
+        padding-right: 20px;
+ 
+ 
+    height: auto !important;
+   
+}section#portfolio {
+    padding-left: 20px;
+    padding-right: 20px;
+}section#about {
+    padding-left: 20px;
+    padding-right: 20px;
+}.card.border-success {
+    margin-top: 25px;
+}section#pricing {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 60px;
+}section#contact {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+}
