@@ -275,3 +275,13 @@ img.masthead-avatar.mb-5.rounded-circle.aos-init.aos-animate {
     padding-right: 20px;
 }
 }
+
+/* make contact & footer containers span 100% */
+section#contact .container,
+footer .container {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
